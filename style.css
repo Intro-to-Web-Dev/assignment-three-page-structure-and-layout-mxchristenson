@@ -1,0 +1,403 @@
+/* 
+Max Christenson 5/23/21 - Assignment 3
+
+Requirement 2-
+
+Question 1: I chose red #ff4646, lightgray #d3d3d3, white #ffffff, & black #000000. I wanted to make
+ my site pop out which is why I went with a nice red color. I also picked red as the main 
+color because it attracts people and influences them to want to buy something.
+
+Question 2: 
+color palette
+red, lightgray, white, black.
+#ff4646, #d3d3d3, #ffffff, #000000.
+
+Question 3: The color red, I really want it to have an impact when you first come to site. 
+The lightgray will be a the head and footer. and the white will be most of the text on the home page. 
+I want to use black on descriptive areas for type so it;s really easy to read and people know what it 
+is that they want to buy. I made the headers background light grey so your really notice the SNEAKER TRA 
+very clearly. 
+*/
+
+/*
+Requirement 3-
+
+Question 1: I will be using a font called waffle crisp for <h1> and I will be using Arial for my <body> and <p>
+
+Question 2: for <h1> I'm using 55pt For the main logo/heading and the the other aera i use it at a 50pt. The weight for both are also bolder. The paragraph tags im
+using 22pt for footer and 20 for the main info.
+
+Question 3: weight for h1 is bolder & bold. word-spacing is normal and the line-height is 20pt, 15pt, and 10pt.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: Arial;
+    src: url(/fonts/Arial.ttf);
+	line-height: 1;
+	letter-spacing: normal;
+	word-spacing: normal;
+    
+}
+p{
+    font-family: Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+@font-face {
+    font-family: Arial ;
+    src: url(/fonts/Arial.ttf);
+}
+@font-face {
+    font-family: Waffle crisp;
+    src: url(/fonts/wafflecrisp.ttf);
+}
+
+
+.webcontainer{
+    width: 100%;
+    height: auto;
+}
+p{
+    line-height: 15pt;
+}
+
+.gridcontainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template: 100px 70px 1fr 100px/  550px 400px 400px ; 
+	background-color: #ffff;
+}
+
+
+header{
+    grid-area: 1/2/3/4;
+}
+#headerbg{
+	background: #d3d3d3;
+	grid-area: 1/1/2/5;
+}
+
+#logo{
+    grid-area: 1/2/2/2;
+	margin-top: 18px;
+	margin-left: 5px;
+	font-size: large;
+    text-align: center;
+}
+#logotext{
+    grid-area: 1;
+	color: #ff4646;
+	font-size: 55pt;
+    font-weight: bolder;
+    text-align: center;
+   
+    font-family: 'waffle crisp';
+    src: url(/fonts/waffle_crisp/Tigadestd\ Agreement.pdf);
+}
+#logotext2{
+    margin-top: 250px;
+    border: #ffffff;
+    color: white;
+	font-size: 50pt;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'waffle crisp';
+    src: url(/fonts/waffle_crisp/Tigadestd\ Agreement.pdf);
+
+}
+#namefield{
+	display: flex;
+	grid-area: 2/1/3/5;
+	border-bottom: 2px solid rgb(185, 42, 42);
+    background-color: #ff4646;
+    justify-content: space-evenly;
+	align-items: center;
+    
+}
+.pages{
+    margin-top: 13px;
+    color: white;
+    font-size: 25pt;
+    font-weight: bold;
+    font-family: 'waffle crisp';
+    src: url(/fonts/waffle_crisp/Tigadestd\ Agreement.pdf);
+}
+#home{
+    height: auto;
+    width: 1431px;
+    margin-left: -40px;
+    grid-area: 1/1/2/3;
+    border-color: #ff4646;
+}
+#shoe{
+    width:300px; 
+    height:200px;
+}
+
+#flexcontainer{
+    background-color: #ff4646;
+    border-radius: 5px white;
+    grid-area: 3/3/5/5;
+    margin-left: 45px;
+}
+#flexcontainer1{
+    background-color: #ffffff;
+    grid-area: 3/2/3;
+    margin-top: 75px;
+}
+#account{
+    grid-area: 3/2/3/4;
+    margin-top: 40px;
+    text-align: center;
+}
+#info{
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 15pt;
+
+}
+#Buy{
+    color: black;
+    text-align: center;
+    padding-top: 3px;
+}
+#UPCOMING{
+    color: black;
+    text-align: center;
+    padding-top: 3px;
+}
+.box1{
+    float: inline-end;
+	width: 13%;
+	height: 20px;
+	margin-left: 370px;
+	margin-top: 20px;
+	box-shadow: 2px 2px gray;
+	background-color: lightgray;
+}
+
+.box2{
+    float: inline-end;
+	width: 15%;
+	height: 40px;
+    margin-left: 364px;
+	margin-right: 10px;
+	margin-top: 12px;
+	box-shadow: 2px 2px gray;
+	background-color: lightgray;
+}
+    
+    
+
+.box{
+    text-align: right;
+    display:block;
+    width: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.label{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 35px;
+    line-height: 20pt;
+}
+.label1{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 35px;
+    margin-left: 80px;
+    line-height: 20pt;
+}
+.label2{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 50px;
+    margin-left: 80px;
+    line-height: 20pt;
+}
+.label3{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 50px;
+    margin-left: 80px;
+    line-height: 20pt;
+}
+.label4{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 50px;
+    margin-left: 80px;
+    line-height: 20pt;
+}
+.label5{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 100px;
+    margin-left: 80px;
+    line-height: 20pt;
+}
+.label6{
+    grid-area: 3/3/4/4;
+    text-align:left;
+    word-spacing: normal;
+    font-size: 14pt;
+    margin-top: 100px;
+    margin-left: 80px;
+    line-height: 20pt;
+}
+.discription{
+    margin-left: 80px;
+    margin-top: 10px;
+    line-height: 20pt;
+}
+#container{
+    grid-area: 3/3;
+
+}
+nav{
+    margin-top: 55px;
+    grid-area: 3/3;
+}
+.add{
+    grid-area: 3/3/4;
+}
+#account{
+    grid-area:3/2/3/4;
+    margin-bottom: 200px;
+}
+.accountp{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20pt;
+    color: #ff4646;
+    text-align: center;
+}
+#emailbox{
+    float: inline-end;
+	width: 109%;
+	height: 20px;
+	margin-right: 10px;
+	margin-top: 12px;
+	box-shadow: 2px 2px gray;
+	background-color: lightgray;
+}
+.email{
+    text-align: left;
+   
+}
+#userbox{
+   
+	width: 109%;
+	height: 20px;
+	margin-right: 10px;
+	margin-top: 12px;
+	box-shadow: 2px 2px gray;
+	background-color: lightgray;
+
+}
+#createbox{
+    float: inline-end;
+	width: 23%;
+	height: 26px;
+	margin-right: 10px;
+    margin-left: 300px;
+	margin-top: 50px;
+	box-shadow: 2px 2px gray;
+	background-color: #ff4646;
+}
+
+.create{
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: left;
+}
+.user{
+    text-align: left;
+    margin-top: 30px;
+    
+}
+#passwordbox{
+   
+	width: 109%;
+	height: 20px;
+	margin-right: 10px;
+	margin-top: 12px;
+	box-shadow: 2px 2px gray;
+	background-color: lightgray;
+}
+.password{
+    text-align: left;
+    margin-top: 30px;
+    
+    
+}
+footer{
+    background:lightgray;
+    grid-area: 4/1/6/5;
+    border-color: 10px #fe4646;
+}
+footer p{
+	font-size: 22pt;
+	text-align: center;
+	color: lightgrey;
+	font-weight: bold;
+}
+#footerflex{
+    margin-top: 35px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    color: #ff4646;
+}
